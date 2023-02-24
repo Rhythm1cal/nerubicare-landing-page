@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neurobicare</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="wow.min.js"></script>
+  <script src="assets/js/particles-js.js"></script>
+  <script src="assets/js/particles-config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="toruskit.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    new WOW().init();
+  </script>
+</head>
+
+<body class="w-full h-full">
+  <section class="main relative h-full">
+    <div class="loader justify-center items-center flex h-full flex-col">
+      <div class="boxes">
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <p class="mt-12 loader-title text-xl">Getting you inside the box..</p>
+    </div>
+    <div class="page-content relative w-full h-full">
+      <div class="sidebar z-30 fixed left-0 h-[200px] w-16 bg-[rgba(21,27,30,.232)] rounded-2xl flex top-[50%]">
+        <div class="flex flex-col justify-center items-center w-full gap-4 relative">
+          <div class="dot border-white border-solid border-2 rounded-full w-4 h-4" data-section="#home"></div>
+          <div class="dot border-white border-solid border-2 rounded-full w-4 h-4" data-section="#features"></div>
+          <div class="dot border-white border-solid border-2 rounded-full w-4 h-4" data-section="#world"></div>
+          <div class="dot border-white border-solid border-2 rounded-full w-4 h-4" data-section="#science"></div>
+          <div class="dot border-white border-solid border-2 rounded-full w-4 h-4" data-section="#team"></div>
+        </div>
+      </div>
+      <!-- ParticlesJS -->
+      <div id="object-particles">
+        <canvas class="particles-js-canvas-el" style="width: auto; height: 100%;"></canvas>
+      </div>
+      <!-- ----------- -->
+      <nav class="top-0 flex p-12 mx-auto max-w-7xl justify-between items-center bg-[#5c449d]" id="home">
+        <div class="flex logo">
+          <img class="h-16" src="logo-white.png" alt="logo">
+        </div>
+        <ul class="sm:flex hidden nav-links gap-5 text-lg">
+          <li>
+            <a href="https://neurobica.online" class="sofia-bold text-lg text-white inline-flex items-center justify-center py-2 text-base text-center transition duration-300 ease-in-out bg-[var(--purple-super-darker)] rounded-md text-dark hover:text-primary hover:shadow-lg sm:px-5 hover:opacity-70">
+              Download our app
+            </a>
+          </li>
+        </ul>
+        <div class="burger sm:hidden block">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </div>
+      </nav>
+      <!-- First Section -->
+      <section class="relative sm:h-[55vh] h-[45vh] min-h-[45vh] sm:pt-24 sm:pt-0" id="home">
+        <div class="pt-3 relative flex flex-col items-center justify-center text-center mx-auto max-w-6xl">
+          <h1 class="sm:text-[5rem] md:text-[4.5rem] lg:text-[5rem] sm:leading-[4.5rem] leading-[2rem] text-4xl font-bold text-white">
+            Unlock Your Brain's Potential with Neurobica
+          </h1>
+          <p class="sofia-regular mx-auto mt-6 mb-10 max-w-[820px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed">
+            Unlock your brain's full potential and achieve peak performance in all areas of your life with Neurobica - the revolutionary neurofeedback training app designed to enhance cognitive function, boost productivity, and improve overall well-being.
+            <!-- <span class="offer flex items-center gap-2"><img class="h-6 w-6" src="vi.svg" alt=""> We offer <b>Personalized</b> neurofeedback training.</span>
+            <span class="offer flex items-center gap-2"><img class="h-6 w-6" src="vi.svg" alt=""> <b>Affordable to anyone.</b></span>
+            <span class="offer flex items-center gap-2"><img class="h-6 w-6" src="vi.svg" alt=""> Can be used, anywhere, at anytime.</span>
+            <span class="offer flex items-center gap-2"><img class="h-6 w-6" src="vi.svg" alt=""> <b>Without risks</b> and with maximum results.</span>
+          </p> -->
+          <ul class="flex flex-wrap items-center justify-center mb-56 relative">
+            <div class="loop absolute h-[250px] w-[215px] justify-center items-center">
+              <img src="assets/images/loop.svg" alt="">
+            </div>
+            <li>
+              <a href="https://neurobica.online" class="sofia-bold text-lg text-white inline-flex items-center justify-center px-6 sm:px-1 py-2 text-base text-center transition duration-300 ease-in-out bg-[var(--purple-super-darker)] rounded-md text-dark hover:text-primary hover:shadow-lg sm:px-7 hover:opacity-70">
+                Show me how
+              </a>
+            </li>
+            <li>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+      <!-- ----------- -->
+      <!-- Features -->
+      <section id="features" class="min-h-full relative w-full text-[var(--main-color)] relative flex flex-col mt-24 bg-[var(--white-bg)] bg-cover bg-center bg-no-repeat bg-fixed relative">
+        <div class="relative w-full mt-[-10px] sm:mt-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#5c449d" fill-opacity="1" d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,176C840,181,960,139,1080,138.7C1200,139,1320,181,1380,202.7L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+          </svg>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center mx-auto max-w-6xl">
+          <h1 class="sm:text-[4.375rem] text-3xl" style="line-height: 1;">Main Features of Neurobica Platform</h1>
+          <div class="container max-w-7xl my-12 mx-auto px-4 md:px-12 relative">
+            <div class="sm:flex-row flex-column flex flex-wrap -mx-1 lg:-mx-4 gap-4 justify-center items-center">
+              <div class="relative max-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black flex-wrap">
+                <h1 class="text-xl" style="letter-spacing: 0.5px">Representation of brain activity</h1>
+                <p class="sofia-bold">the app background will change according to the user’s brain waves. The user’s real time brain activity will also be shown as raw data or different brain waves.</p>
+              </div>
+              <div class="relative max-h-[300px] min-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
+                <h1 class="text-xl" style="letter-spacing: 0.5px">Daily tips</h1>
+                <p class="sofia-bold">A daily tip for maintaining brain – the app will provide daily tips for maintaining a healthy brain/improving cognitive functions.</p>
+              </div>
+              <div class="relative max-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
+                <h1 class="text-xl" style="letter-spacing: 0.5px">High-quality Design</h1>
+                <p class="sofia-bold">Experience a high-quality design with our neurofeedback training app. Our sleek and modern interface is not only visually appealing, but also user-friendly, providing you with a positive training experience.</p>
+              </div>
+              <div class="relative rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
+                <h1 class="text-xl">Representation of brain activity</h1>
+                <p class="sofia-bold">the app background will change according to the user’s brain waves. The user’s real time brain activity will also be shown as raw data or different brain waves.</p>
+              </div>
+              <div class="relative rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
+                <h1 class="text-xl">Representation of brain activity</h1>
+                <p class="sofia-bold">the app background will change according to the user’s brain waves. The user’s real time brain activity will also be shown as raw data or different brain waves.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative w-full mt-[-10px] sm:mt-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffd9d9" fill-opacity="1" d="M0,96L60,112C120,128,240,160,360,165.3C480,171,600,149,720,165.3C840,181,960,235,1080,240C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+          </svg>
+        </div>
+      </section>
+      <section id="world" class="pb-16 relative w-full text-[var(--main-color)] bg-[var(--pink)] relative flex flex-col relative text-center justify-center">
+        <div class="sm:mt-0 mt-12 flex flex-col items-center justify-center text-center mx-auto sm:max-w-6xl w-full">
+          <h1 class="text-[var(--purple-darker)] sm:text-5xl text-4xl flex flex-row justify-center items-center text-center">Take on the World with Neurobica Neurofeedback Training
+          </h1>
+          <p class="sofia-bold text-[var(--purple-darker)] text-xl mt-4">Unlock your full potential with Neurobica's Neurofeedback Training app. Improve your brain power and take on any challenge that comes your way. Download now.</p>
+          <a href="https://neurobica.online" class="mt-12 sofia-bold text-lg text-white inline-flex items-center justify-center py-2 text-base text-center transition duration-300 ease-in-out bg-[var(--purple-darker)] rounded-md text-dark hover:text-primary hover:shadow-lg sm:px-5 px-4 hover:opacity-80">
+            Download Now / Buy now
+          </a>
+        </div>
+      </section>
+
+      <section id="science" class="min-h-full relative w-full text-white relative flex flex-col bg-[var(--purple-darker)] bg-cover bg-center bg-no-repeat bg-fixed relative">
+        <div class="relative w-full mt-[-10px] sm:mt-0">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#ffd9d9" fill-opacity="1" d="M0,256L34.3,261.3C68.6,267,137,277,206,240C274.3,203,343,117,411,90.7C480,64,549,96,617,128C685.7,160,754,192,823,176C891.4,160,960,96,1029,90.7C1097.1,85,1166,139,1234,138.7C1302.9,139,1371,85,1406,58.7L1440,32L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+          </svg>
+        </div>
+        <div class="flex flex-col items-center justify-center text-center mx-auto max-w-6xl sm:mt-0 mt-12">
+          <h1 class="sm:text-[4.375rem] text-4xl" style="line-height: 1;">The Science Behind Our Training</h1>
+          <div class="rounded-full bg-white h-4 w-24 justify-center items-center mt-4"></div>
+          <div class="container mx-auto px-4 md:px-12 relative">
+            <div class="behind_our_training">
+              <div class="behind_card bg-white text-black rounded-xl p-8 w-auto text-left justify-between flex ">
+                <div class="content">
+                  <h1 class="text-2xl">Unleash Your Brain's Potential</h1>
+                  <p class="sofia-bold">Discover how Neurobica's neurofeedback training app uses the latest in neuroscience technology to help you achieve your full cognitive potential.</p>
+                </div>
+                <img class="h-12" src="assets/images/brain.svg" alt="">
+              </div>
+              <div class="behind_card bg-white text-black rounded-xl p-8 w-auto text-left justify-between flex ">
+                <div class="content">
+                  <h1 class="text-2xl">Harness the Power of Neurofeedback</h1>
+                  <p class="sofia-bold">Discover how Neurobica's neurofeedback training app uses the latest in neuroscience technology to help you achieve your full cognitive potential.</p>
+                </div>
+                <img class="h-12" src="assets/images/power.svg" alt="">
+              </div>
+              <div class="behind_card bg-white text-black rounded-xl p-8 w-auto text-left justify-between flex ">
+                <div class="content">
+                  <h1 class="text-2xl">Explore Your Brainwaves</h1>
+                  <p class="sofia-bold">See the different types of brainwaves our app monitors and how they affect your cognitive performance.</p>
+                </div>
+                <img class="h-12" src="assets/images/waves.svg" alt="">
+              </div>
+              <div class="behind_card bg-white text-black rounded-xl p-8 w-auto text-left justify-between flex ">
+                <div class="content">
+                  <h1 class="text-2xl">Get Personalized Feedback for Peak Performance</h1>
+                  <p class="sofia-bold">Learn how our app provides personalized feedback to help you improve your cognitive function and achieve peak performance.</p>
+                </div>
+                <img class="h-12" src="assets/images/feedback.svg" alt="">
+              </div>
+              <div class="behind_card bg-white text-black rounded-xl p-8 w-auto text-left justify-between flex ">
+                <div class="content">
+                  <h1 class="text-2xl">Personalized Brain Training Plans</h1>
+                  <p class="sofia-bold">Discover how our app creates customized training plans based on your individual needs and goals to help you achieve optimal cognitive performance.</p>
+                </div>
+                <img class="h-12" src="assets/images/schedule.svg" alt="">
+              </div>
+              <div class="behind_card bg-white text-black rounded-xl p-8 w-auto text-left justify-between flex ">
+                <div class="content">
+                  <h1 class="text-2xl">Track Your Brainpower Progress</h1>
+                  <p class="sofia-bold">Learn how our app tracks your progress over time and helps you stay motivated to achieve your cognitive goals.</p>
+                </div>
+                <img class="h-12" src="assets/images/progress.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="meet_our_team relative min-h-full w-full flex flex-col" id="team">
+        <div class="flex flex-col items-center justify-center text-center mx-auto max-w-[90rem] sm:mt-12 mt-24">
+          <h1 class="sm:text-[4.375rem] text-4xl" style="line-height: 1;">Introducing Our Team</h1>
+          <img src="assets/images/Underline.svg" alt="">
+          <div class="members flex sm:flex-row flex-col mx-auto justify-center items-center text-black mt-24 gap-2">
+            <div class="relative team_member rounded-md bg-[var(--pink)] p-12 justify-center items-center gap-4 sm:w-[31%] flex flex-col flex-wrap">
+              <div class="sofia-bold tag absolute top-4 left-4 rounded-full" style="--color: blue">
+                <div style="padding-top: 0.1em; padding-bottom: 0.1rem" class="text-sm px-4 bg-pink-200 text-pink-800 rounded-full">Founder</div>
+              </div>
+              <div class="img justify-center items-center">
+                <img class="rounded-full h-24" src="https://picsum.photos/200" alt="">
+              </div>
+              <div class="info">
+                <h1 class="text-4xl">Yoad <div class="block">Natan</div>
+                </h1>
+                <p class="sofia-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellendus aut, adipisci beatae nisi libero numquam nulla fugit iste voluptate itaque, commodi quibusdam incidunt. In iure minus consequatur molestias est!</p>
+              </div>
+            </div>
+            <div class="relative team_member rounded-md bg-[var(--pink)] p-12 justify-center items-center gap-4 sm:w-[31%] flex flex-col flex-wrap">
+              <div class="sofia-bold tag absolute top-4 left-4 rounded-full" style="--color: blue">
+                <div style="padding-top: 0.1em; padding-bottom: 0.1rem" class="text-sm px-4 bg-pink-200 text-pink-800 rounded-full">Founder</div>
+              </div>
+              <div class="img justify-center items-center">
+                <img class="rounded-full h-24" src="https://picsum.photos/200" alt="">
+              </div>
+              <div class="info">
+                <h1 class="text-4xl">Itay <div class="block">Lilling</div>
+                </h1>
+                <p class="sofia-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellendus aut, adipisci beatae nisi libero numquam nulla fugit iste voluptate itaque, commodi quibusdam incidunt. In iure minus consequatur molestias est!</p>
+              </div>
+            </div>
+            <div class="relative team_member rounded-md bg-[var(--pink)] p-12 justify-center items-center gap-4 sm:w-[31%] flex flex-col flex-wrap">
+              <div class="sofia-bold tag absolute top-4 left-4 rounded-full" style="--color: blue">
+                <div style="padding-top: 0.1em; padding-bottom: 0.1rem" class="text-sm px-4 bg-pink-200 text-pink-800 rounded-full">Founder</div>
+              </div>
+              <div class="img justify-center items-center">
+                <img class="rounded-full h-24" src="https://picsum.photos/200" alt="">
+              </div>
+              <div class="info">
+                <h1 class="text-4xl">Yoad Natan</h1>
+                <p class="sofia-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellendus aut, adipisci beatae nisi libero numquam nulla fugit iste voluptate itaque, commodi quibusdam incidunt. In iure minus consequatur molestias est!</p>
+              </div>
+            </div>
+            <div class="relative team_member rounded-md bg-[var(--pink)] p-12 justify-center items-center gap-4 sm:w-[31%] flex flex-col flex-wrap">
+              <div class="sofia-bold tag absolute top-4 left-4 rounded-full" style="--color: blue">
+                <div style="padding-top: 0.1em; padding-bottom: 0.1rem" class="text-sm px-4 bg-pink-200 text-pink-800 rounded-full">Founder</div>
+              </div>
+              <div class="img justify-center items-center">
+                <img class="rounded-full h-24" src="https://picsum.photos/200" alt="">
+              </div>
+              <div class="info">
+                <h1 class="text-4xl">Yoad Natan</h1>
+                <p class="sofia-bold">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repellendus aut, adipisci beatae nisi libero numquam nulla fugit iste voluptate itaque, commodi quibusdam incidunt. In iure minus consequatur molestias est!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <script src="assets/js/toruskit.min.js"></script>
+</body>
+
+</html>
