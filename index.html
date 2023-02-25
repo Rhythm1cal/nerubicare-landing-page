@@ -13,6 +13,7 @@
   <script src="assets/js/main.js"></script>
   <link rel="stylesheet" href="toruskit.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/acb6d146f2.js" crossorigin="anonymous"></script>
   <script>
     new WOW().init();
   </script>
@@ -20,7 +21,7 @@
 
 <body class="w-full h-full">
   <section class="main relative h-full">
-    <div class="loader justify-center items-center flex h-full flex-col">
+    <div class="loader max-w-4xl mx-auto text-center justify-center items-center flex h-full flex-col">
       <div class="boxes">
         <div class="box">
           <div></div>
@@ -47,7 +48,7 @@
           <div></div>
         </div>
       </div>
-      <p class="mt-12 loader-title text-xl">Getting you inside the box..</p>
+      <p class="mt-32 loader-title text-xl">Loading..</p>
     </div>
     <div class="page-content relative w-full h-full">
       <div class="sidebar z-30 fixed left-0 h-[200px] w-16 bg-[rgba(21,27,30,.232)] rounded-2xl flex top-[50%]">
@@ -89,16 +90,11 @@
           </h1>
           <p class="sofia-regular mx-auto mt-6 mb-10 max-w-[820px] text-base text-[#e4e4e4] sm:text-lg sm:leading-relaxed md:text-xl md:leading-relaxed">
             Unlock your brain's full potential and achieve peak performance in all areas of your life with Neurobica - the revolutionary neurofeedback training app designed to enhance cognitive function, boost productivity, and improve overall well-being.
-            <!-- <span class="offer flex items-center gap-2"><img class="h-6 w-6" src="vi.svg" alt=""> We offer <b>Personalized</b> neurofeedback training.</span>
-            <span class="offer flex items-center gap-2"><img class="h-6 w-6" src="vi.svg" alt=""> <b>Affordable to anyone.</b></span>
-            <span class="offer flex items-center gap-2"><img class="h-6 w-6" src="vi.svg" alt=""> Can be used, anywhere, at anytime.</span>
-            <span class="offer flex items-center gap-2"><img class="h-6 w-6" src="vi.svg" alt=""> <b>Without risks</b> and with maximum results.</span>
-          </p> -->
           <ul class="flex flex-wrap items-center justify-center mb-56 relative">
-            <div class="loop absolute h-[250px] w-[215px] justify-center items-center">
+            <div class="loop absolute h-[250px] w-[215px] justify-center items-center z-1">
               <img src="assets/images/loop.svg" alt="">
             </div>
-            <li>
+            <li class="z-10">
               <a href="https://neurobica.online" class="sofia-bold text-lg text-white inline-flex items-center justify-center px-6 sm:px-1 py-2 text-base text-center transition duration-300 ease-in-out bg-[var(--purple-super-darker)] rounded-md text-dark hover:text-primary hover:shadow-lg sm:px-7 hover:opacity-70">
                 Show me how
               </a>
@@ -120,24 +116,24 @@
         <div class="flex flex-col items-center justify-center text-center mx-auto max-w-6xl">
           <h1 class="sm:text-[4.375rem] text-3xl" style="line-height: 1;">Main Features of Neurobica Platform</h1>
           <div class="container max-w-7xl my-12 mx-auto px-4 md:px-12 relative">
-            <div class="sm:flex-row flex-column flex flex-wrap -mx-1 lg:-mx-4 gap-4 justify-center items-center">
-              <div class="relative max-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black flex-wrap">
+            <div class="features sm:flex-row flex-column flex flex-wrap -mx-1 lg:-mx-4 gap-4 justify-center items-center">
+              <div class="feature_card relative max-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black flex-wrap">
                 <h1 class="text-xl" style="letter-spacing: 0.5px">Representation of brain activity</h1>
                 <p class="sofia-bold">the app background will change according to the user’s brain waves. The user’s real time brain activity will also be shown as raw data or different brain waves.</p>
               </div>
-              <div class="relative max-h-[300px] min-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
+              <div class="feature_card relative max-h-[300px] min-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
                 <h1 class="text-xl" style="letter-spacing: 0.5px">Daily tips</h1>
                 <p class="sofia-bold">A daily tip for maintaining brain – the app will provide daily tips for maintaining a healthy brain/improving cognitive functions.</p>
               </div>
-              <div class="relative max-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
+              <div class="feature_card relative max-h-[300px] rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
                 <h1 class="text-xl" style="letter-spacing: 0.5px">High-quality Design</h1>
                 <p class="sofia-bold">Experience a high-quality design with our neurofeedback training app. Our sleek and modern interface is not only visually appealing, but also user-friendly, providing you with a positive training experience.</p>
               </div>
-              <div class="relative rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
+              <div class="feature_card relative rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
                 <h1 class="text-xl">Representation of brain activity</h1>
                 <p class="sofia-bold">the app background will change according to the user’s brain waves. The user’s real time brain activity will also be shown as raw data or different brain waves.</p>
               </div>
-              <div class="relative rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
+              <div class="feature_card relative rounded-lg bg-[var(--pink)] sm:p-12 md:p-12 p-8 sm:mb-0 mb-4 sm:w-[31%] w-full text-left text-black">
                 <h1 class="text-xl">Representation of brain activity</h1>
                 <p class="sofia-bold">the app background will change according to the user’s brain waves. The user’s real time brain activity will also be shown as raw data or different brain waves.</p>
               </div>
@@ -277,20 +273,484 @@
         </div>
       </section>
 
-      <section id="goal" class="our_goal relative min-h-full w-full flex bg-white text-black">
+      <section id="goal" class="our_goal relative min-h-[60%] w-full flex bg-white text-black">
         <div class="relative bg-white text-center justify-between mx-auto sm:max-w-7xl w-full flex sm:flex-row flex-col items-center gap-12 sm:mt-0 mt-24">
           <div class="text sm:w-[50%] w-full text-left">
             <h1 class="sm:text-7xl text-4xl">Our Goal As Neurobica</h1>
             <img src="assets/images/underline_pink.svg" class="w-[60%] mb-4" alt="">
             <p class="sofia-bold text-md">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, amet optio? Alias nisi quod blanditiis quam magnam? Dicta, reiciendis? Corrupti qui debitis aliquid illo dolorum, quisquam incidunt ad repellendus enim.</p>
+            <a href="https://neurobica.online" class="mt-12 sofia-bold text-lg text-white inline-flex items-center justify-center py-2 text-base text-center transition duration-300 ease-in-out bg-[var(--pink-darker)] rounded-md text-dark hover:text-white hover:shadow-lg sm:px-5 px-4 hover:opacity-80">
+              Contact Us
+            </a>
           </div>
           <div class="img sm:w-[50%] w-full justify-center items-center flex">
             <img src="assets/images/goal.svg" class="h-full" alt="">
           </div>
         </div>
       </section>
+
+      <section class="relative min-h-[60%] w-full flex flex-col" id="team">
+        <div class="relative w-full mt-[-10px] sm:mt-0 ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1" d="M0,256L40,229.3C80,203,160,149,240,149.3C320,149,400,203,480,202.7C560,203,640,149,720,117.3C800,85,880,75,960,74.7C1040,75,1120,85,1200,74.7C1280,64,1360,32,1400,16L1440,0L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+          </svg>
+        </div>
+        <div class="mb-24 flex sm:flex-row flex-col justify-between text-center mx-auto max-w-[90%] sm:mt-0 mt-12 gap-12">
+          <div class="info sm:text-left text-center sm:w-[31%] w-full">
+            <h1 class="text-5xl">Neurobica</h1>
+            <p class="sofia-bold text-xl">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, possimus! Accusamus quisquam ducimus, laboriosam ipsam aliquam ratione voluptate incidunt molestias culpa, ipsum repellendus porro quo dolore dicta praesentium est impedit.</p>
+          </div>
+          <div class="links sm:text-left text-center sm:w-[31%] w-full">
+            <h1 class="text-4xl">Site Map</h1>
+            <img src="assets/images/underline_pink.svg" class="sm:w-[30%] w-full mb-4" alt="">
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 flex-wrap sm:w-[25%] w-[50%]" style="grid-column-gap: 1rem; grid-row-gap: 1rem;">
+              <a href="#home" class="sofia-bold text-lg">Home</a>
+              <a href="#about" class="sofia-bold text-lg">About</a>
+              <a href="#team" class="sofia-bold text-lg">Team</a>
+              <a href="#goal" class="sofia-bold text-lg">Goal</a>
+              <a href="#goal" class="sofia-bold text-lg">Goal</a>
+              <a href="#goal" class="sofia-bold text-lg">Goal</a>
+            </div>
+          </div>
+
+          <div class="social sm:text-left text-center sm:w-[31%] w-full">
+            <h1 class="text-4xl mb-4">Follow us on</h1>
+            <div class="flex gap-4 items-center sm:justify-start justify-center">
+              <a href="https://www.facebook.com/neurobica" target="_blank" class="text-2xl">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/neurobica/" target="_blank" class="text-2xl">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/neurobica" target="_blank" class="text-2xl">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.youtube.com/channel/UCZ1Z2Z1Z2Z1Z2Z1Z2Z1Z2Z1" target="_blank" class="text-2xl">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </section>
+
+  <script>
+    window.quotes = [{
+        "quote": "Life isn’t about getting and having, it’s about giving and being.",
+        "author": "Kevin Kruse"
+      },
+      {
+        "quote": "Whatever the mind of man can conceive and believe, it can achieve.",
+        "author": "Napoleon Hill"
+      },
+      {
+        "quote": "Strive not to be a success, but rather to be of value.",
+        "author": "Albert Einstein"
+      },
+      {
+        "quote": "Two roads diverged in a wood, and I—I took the one less traveled by, And that has made all the difference.",
+        "author": "Robert Frost"
+      },
+      {
+        "quote": "I attribute my success to this: I never gave or took any excuse.",
+        "author": "Florence Nightingale"
+      },
+      {
+        "quote": "You miss 100% of the shots you don’t take.",
+        "author": "Wayne Gretzky"
+      },
+      {
+        "quote": "I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.",
+        "author": "Michael Jordan"
+      },
+      {
+        "quote": "The most difficult thing is the decision to act, the rest is merely tenacity.",
+        "author": "Amelia Earhart"
+      },
+      {
+        "quote": "Every strike brings me closer to the next home run.",
+        "author": "Babe Ruth"
+      },
+      {
+        "quote": "Definiteness of purpose is the starting point of all achievement.",
+        "author": "W. Clement Stone"
+      },
+      {
+        "quote": "We must balance conspicuous consumption with conscious capitalism.",
+        "author": "Kevin Kruse"
+      },
+      {
+        "quote": "Life is what happens to you while you’re busy making other plans.",
+        "author": "John Lennon"
+      },
+      {
+        "quote": "We become what we think about.",
+        "author": "Earl Nightingale"
+      },
+      {
+        "quote": "Twenty years from now you will be more disappointed by the things that you didn’t do than by the ones you did do, so throw off the bowlines, sail away from safe harbor, catch the trade winds in your sails.  Explore, Dream, Discover.",
+        "author": "Mark Twain"
+      },
+      {
+        "quote": "Life is 10% what happens to me and 90% of how I react to it.",
+        "author": "Charles Swindoll"
+      },
+      {
+        "quote": "The most common way people give up their power is by thinking they don’t have any.",
+        "author": "Alice Walker"
+      },
+      {
+        "quote": "The mind is everything. What you think you become.",
+        "author": "Buddha"
+      },
+      {
+        "quote": "The best time to plant a tree was 20 years ago. The second best time is now.",
+        "author": "Chinese Proverb"
+      },
+      {
+        "quote": "An unexamined life is not worth living.",
+        "author": "Socrates"
+      },
+      {
+        "quote": "Eighty percent of success is showing up.",
+        "author": "Woody Allen"
+      },
+      {
+        "quote": "Your time is limited, so don’t waste it living someone else’s life.",
+        "author": "Steve Jobs"
+      },
+      {
+        "quote": "Winning isn’t everything, but wanting to win is.",
+        "author": "Vince Lombardi"
+      },
+      {
+        "quote": "I am not a product of my circumstances. I am a product of my decisions.",
+        "author": "Stephen Covey"
+      },
+      {
+        "quote": "Every child is an artist.  The problem is how to remain an artist once he grows up.",
+        "author": "Pablo Picasso"
+      },
+      {
+        "quote": "You can never cross the ocean until you have the courage to lose sight of the shore.",
+        "author": "Christopher Columbus"
+      },
+      {
+        "quote": "I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+        "author": "Maya Angelou"
+      },
+      {
+        "quote": "Either you run the day, or the day runs you.",
+        "author": "Jim Rohn"
+      },
+      {
+        "quote": "Whether you think you can or you think you can’t, you’re right.",
+        "author": "Henry Ford"
+      },
+      {
+        "quote": "The two most important days in your life are the day you are born and the day you find out why.",
+        "author": "Mark Twain"
+      },
+      {
+        "quote": "Whatever you can do, or dream you can, begin it.  Boldness has genius, power and magic in it.",
+        "author": "Johann Wolfgang von Goethe"
+      },
+      {
+        "quote": "The best revenge is massive success.",
+        "author": "Frank Sinatra"
+      },
+      {
+        "quote": "People often say that motivation doesn’t last. Well, neither does bathing.  That’s why we recommend it daily.",
+        "author": "Zig Ziglar"
+      },
+      {
+        "quote": "Life shrinks or expands in proportion to one’s courage.",
+        "author": "Anais Nin"
+      },
+      {
+        "quote": "If you hear a voice within you say “you cannot paint,” then by all means paint and that voice will be silenced.",
+        "author": "Vincent Van Gogh"
+      },
+      {
+        "quote": "There is only one way to avoid criticism: do nothing, say nothing, and be nothing.",
+        "author": "Aristotle"
+      },
+      {
+        "quote": "Ask and it will be given to you; search, and you will find; knock and the door will be opened for you.",
+        "author": "Jesus"
+      },
+      {
+        "quote": "The only person you are destined to become is the person you decide to be.",
+        "author": "Ralph Waldo Emerson"
+      },
+      {
+        "quote": "Go confidently in the direction of your dreams.  Live the life you have imagined.",
+        "author": "Henry David Thoreau"
+      },
+      {
+        "quote": "When I stand before God at the end of my life, I would hope that I would not have a single bit of talent left and could say, I used everything you gave me.",
+        "author": "Erma Bombeck"
+      },
+      {
+        "quote": "Few things can help an individual more than to place responsibility on him, and to let him know that you trust him.",
+        "author": "Booker T. Washington"
+      },
+      {
+        "quote": "Certain things catch your eye, but pursue only those that capture the heart.",
+        "author": " Ancient Indian Proverb"
+      },
+      {
+        "quote": "Believe you can and you’re halfway there.",
+        "author": "Theodore Roosevelt"
+      },
+      {
+        "quote": "Everything you’ve ever wanted is on the other side of fear.",
+        "author": "George Addair"
+      },
+      {
+        "quote": "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.",
+        "author": "Plato"
+      },
+      {
+        "quote": "Teach thy tongue to say, “I do not know,” and thous shalt progress.",
+        "author": "Maimonides"
+      },
+      {
+        "quote": "Start where you are. Use what you have.  Do what you can.",
+        "author": "Arthur Ashe"
+      },
+      {
+        "quote": "When I was 5 years old, my mother always told me that happiness was the key to life.  When I went to school, they asked me what I wanted to be when I grew up.  I wrote down ‘happy’.  They told me I didn’t understand the assignment, and I told them they didn’t understand life.",
+        "author": "John Lennon"
+      },
+      {
+        "quote": "Fall seven times and stand up eight.",
+        "author": "Japanese Proverb"
+      },
+      {
+        "quote": "When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us.",
+        "author": "Helen Keller"
+      },
+      {
+        "quote": "Everything has beauty, but not everyone can see.",
+        "author": "Confucius"
+      },
+      {
+        "quote": "How wonderful it is that nobody need wait a single moment before starting to improve the world.",
+        "author": "Anne Frank"
+      },
+      {
+        "quote": "When I let go of what I am, I become what I might be.",
+        "author": "Lao Tzu"
+      },
+      {
+        "quote": "Life is not measured by the number of breaths we take, but by the moments that take our breath away.",
+        "author": "Maya Angelou"
+      },
+      {
+        "quote": "Happiness is not something readymade.  It comes from your own actions.",
+        "author": "Dalai Lama"
+      },
+      {
+        "quote": "If you’re offered a seat on a rocket ship, don’t ask what seat! Just get on.",
+        "author": "Sheryl Sandberg"
+      },
+      {
+        "quote": "First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end.",
+        "author": "Aristotle"
+      },
+      {
+        "quote": "If the wind will not serve, take to the oars.",
+        "author": "Latin Proverb"
+      },
+      {
+        "quote": "You can’t fall if you don’t climb.  But there’s no joy in living your whole life on the ground.",
+        "author": "Unknown"
+      },
+      {
+        "quote": "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained.",
+        "author": "Marie Curie"
+      },
+      {
+        "quote": "Too many of us are not living our dreams because we are living our fears.",
+        "author": "Les Brown"
+      },
+      {
+        "quote": "Challenges are what make life interesting and overcoming them is what makes life meaningful.",
+        "author": "Joshua J. Marine"
+      },
+      {
+        "quote": "If you want to lift yourself up, lift up someone else.",
+        "author": "Booker T. Washington"
+      },
+      {
+        "quote": "I have been impressed with the urgency of doing. Knowing is not enough; we must apply. Being willing is not enough; we must do.",
+        "author": "Leonardo da Vinci"
+      },
+      {
+        "quote": "Limitations live only in our minds.  But if we use our imaginations, our possibilities become limitless.",
+        "author": "Jamie Paolinetti"
+      },
+      {
+        "quote": "You take your life in your own hands, and what happens? A terrible thing, no one to blame.",
+        "author": "Erica Jong"
+      },
+      {
+        "quote": "What’s money? A man is a success if he gets up in the morning and goes to bed at night and in between does what he wants to do.",
+        "author": "Bob Dylan"
+      },
+      {
+        "quote": "I didn’t fail the test. I just found 100 ways to do it wrong.",
+        "author": "Benjamin Franklin"
+      },
+      {
+        "quote": "In order to succeed, your desire for success should be greater than your fear of failure.",
+        "author": "Bill Cosby"
+      },
+      {
+        "quote": "A person who never made a mistake never tried anything new.",
+        "author": " Albert Einstein"
+      },
+      {
+        "quote": "The person who says it cannot be done should not interrupt the person who is doing it.",
+        "author": "Chinese Proverb"
+      },
+      {
+        "quote": "There are no traffic jams along the extra mile.",
+        "author": "Roger Staubach"
+      },
+      {
+        "quote": "It is never too late to be what you might have been.",
+        "author": "George Eliot"
+      },
+      {
+        "quote": "You become what you believe.",
+        "author": "Oprah Winfrey"
+      },
+      {
+        "quote": "I would rather die of passion than of boredom.",
+        "author": "Vincent van Gogh"
+      },
+      {
+        "quote": "A truly rich man is one whose children run into his arms when his hands are empty.",
+        "author": "Unknown"
+      },
+      {
+        "quote": "It is not what you do for your children, but what you have taught them to do for themselves, that will make them successful human beings.",
+        "author": "Ann Landers"
+      },
+      {
+        "quote": "If you want your children to turn out well, spend twice as much time with them, and half as much money.",
+        "author": "Abigail Van Buren"
+      },
+      {
+        "quote": "Build your own dreams, or someone else will hire you to build theirs.",
+        "author": "Farrah Gray"
+      },
+      {
+        "quote": "The battles that count aren’t the ones for gold medals. The struggles within yourself–the invisible battles inside all of us–that’s where it’s at.",
+        "author": "Jesse Owens"
+      },
+      {
+        "quote": "Education costs money.  But then so does ignorance.",
+        "author": "Sir Claus Moser"
+      },
+      {
+        "quote": "I have learned over the years that when one’s mind is made up, this diminishes fear.",
+        "author": "Rosa Parks"
+      },
+      {
+        "quote": "It does not matter how slowly you go as long as you do not stop.",
+        "author": "Confucius"
+      },
+      {
+        "quote": "If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough.",
+        "author": "Oprah Winfrey"
+      },
+      {
+        "quote": "Remember that not getting what you want is sometimes a wonderful stroke of luck.",
+        "author": "Dalai Lama"
+      },
+      {
+        "quote": "You can’t use up creativity.  The more you use, the more you have.",
+        "author": "Maya Angelou"
+      },
+      {
+        "quote": "Dream big and dare to fail.",
+        "author": "Norman Vaughan"
+      },
+      {
+        "quote": "Our lives begin to end the day we become silent about things that matter.",
+        "author": "Martin Luther King Jr."
+      },
+      {
+        "quote": "Do what you can, where you are, with what you have.",
+        "author": "Teddy Roosevelt"
+      },
+      {
+        "quote": "If you do what you’ve always done, you’ll get what you’ve always gotten.",
+        "author": "Tony Robbins"
+      },
+      {
+        "quote": "Dreaming, after all, is a form of planning.",
+        "author": "Gloria Steinem"
+      },
+      {
+        "quote": "It’s your place in the world; it’s your life. Go on and do all you can with it, and make it the life you want to live.",
+        "author": "Mae Jemison"
+      },
+      {
+        "quote": "You may be disappointed if you fail, but you are doomed if you don’t try.",
+        "author": "Beverly Sills"
+      },
+      {
+        "quote": "Remember no one can make you feel inferior without your consent.",
+        "author": "Eleanor Roosevelt"
+      },
+      {
+        "quote": "Life is what we make it, always has been, always will be.",
+        "author": "Grandma Moses"
+      },
+      {
+        "quote": "The question isn’t who is going to let me; it’s who is going to stop me.",
+        "author": "Ayn Rand"
+      },
+      {
+        "quote": "When everything seems to be going against you, remember that the airplane takes off against the wind, not with it.",
+        "author": "Henry Ford"
+      },
+      {
+        "quote": "It’s not the years in your life that count. It’s the life in your years.",
+        "author": "Abraham Lincoln"
+      },
+      {
+        "quote": "Change your thoughts and you change your world.",
+        "author": "Norman Vincent Peale"
+      },
+      {
+        "quote": "Either write something worth reading or do something worth writing.",
+        "author": "Benjamin Franklin"
+      },
+      {
+        "quote": "Nothing is impossible, the word itself says, “I’m possible!”",
+        "author": "–Audrey Hepburn"
+      },
+      {
+        "quote": "The only way to do great work is to love what you do.",
+        "author": "Steve Jobs"
+      },
+      {
+        "quote": "If you can dream it, you can achieve it.",
+        "author": "Zig Ziglar"
+      }
+    ]
+  </script>
+  <script>
+    let quotes = window.quotes;
+    let quote = quotes[Math.floor(Math.random() * quotes.length)];
+    document.getElementsByClassName('loader-title')[0].innerHTML = `"` + quote.quote + `"`;
+  </script>
   <script src="assets/js/toruskit.min.js"></script>
 </body>
 

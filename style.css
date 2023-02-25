@@ -38,7 +38,8 @@
   --purple-darker: #5928e5;
   --purple-super-darker: #4a1f9e;
   --white-bg: #fff;
-  --pink: #ffd9d9
+  --pink: #ffd9d9;
+  --pink-darker: #ff9e9e;
 }
 
 body , html {
@@ -462,4 +463,17 @@ a {
 
 .team_member:hover {
   transform: scale(1.1);
+}
+
+.feature_card {
+  transition: all 0.3s ease-in-out;
+}
+
+.feature_card:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.features:has(.feature_card:hover) .feature_card:not(.feature_card:hover) {
+  opacity: 0.5;
 }

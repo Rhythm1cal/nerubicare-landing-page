@@ -1,4 +1,6 @@
 window.onload = function () {
+
+
     let dots = document.querySelectorAll(".dot");
 
     window.setActiveDot = (sectionId) => {
@@ -11,21 +13,25 @@ window.onload = function () {
 
     let loader = document.getElementsByClassName('loader')[0];
     let pageContent = document.getElementsByClassName('page-content')[0];
-    var wait = 100;
+    var wait = 1000;
 
+    
     setTimeout(() => {
         loader.style.opacity = 0;
         pageContent.style.display = 'block';
         setTimeout(() => {
             pageContent.style.opacity = 1
             loader.style.display = 'none'
-            document.querySelector(`#goal`).scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-                inline: "nearest"
-            });
+            // document.querySelector(`#goal`).scrollIntoView({
+            //     behavior: "smooth",
+            //     block: "start",
+            //     inline: "nearest"
+            // });
         }, wait / 2);
     }, wait)
+
+
+
 
     setActiveDot("home");
 
