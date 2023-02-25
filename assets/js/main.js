@@ -11,7 +11,7 @@ window.onload = function () {
 
     let loader = document.getElementsByClassName('loader')[0];
     let pageContent = document.getElementsByClassName('page-content')[0];
-    var wait = 800;
+    var wait = 100;
 
     setTimeout(() => {
         loader.style.opacity = 0;
@@ -19,6 +19,11 @@ window.onload = function () {
         setTimeout(() => {
             pageContent.style.opacity = 1
             loader.style.display = 'none'
+            document.querySelector(`#goal`).scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+                inline: "nearest"
+            });
         }, wait / 2);
     }, wait)
 
